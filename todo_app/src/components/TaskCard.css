@@ -1,0 +1,12 @@
+.show_task {
+  background-color: #444444;
+}
+.task_title {
+  color: orange;
+}
+.btn_complete:active {
+  background-color: rgb(125, 212, 125);
+}
+.btn_delete:active {
+  background-color: #da7c7c;
+}

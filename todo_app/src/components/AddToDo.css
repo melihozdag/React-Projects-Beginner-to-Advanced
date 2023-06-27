@@ -1,0 +1,13 @@
+input {
+  border-color: orange;
+  width: 100%;
+}
+.add_btn {
+  background-color: orange;
+}
+.add_btn:active {
+  background-color: #5b9981;
+}
+.add_task {
+  background-color: #444444;
+}
