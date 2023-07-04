@@ -1,0 +1,38 @@
+.current {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Kararma rengi ve opaklık değeri */
+  z-index: 1;
+}
+
+.current > div {
+  position: relative;
+  z-index: 2;
+  color: #fff; /* Yazı rengi */
+}
+
+.city_name {
+  font-size: 5rem;
+}
+
+.temperature {
+  font-size: 5rem;
+}
+
+.description {
+  font-size: 2rem;
+}
+.tempreature_description {
+  background-color: rgba(0, 0, 0, 0.486);
+}
