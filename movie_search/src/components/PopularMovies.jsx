@@ -30,7 +30,7 @@ export const PopularMovies = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://api.themoviedb.org/3/trending/movie/week?api_key=4c64ec381362a3bca6f38fcde13cb74f"
+          "https://api.themoviedb.org/3/trending/movie/week?api_key={YOUR API}"
         );
         setMovies(response.data.results);
       } catch (error) {
