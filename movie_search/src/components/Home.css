@@ -1,0 +1,19 @@
+.home {
+  background-color: rgb(88, 84, 84);
+}
+.popular_title {
+  color: orange;
+}
+.justify_line {
+  height: 3px;
+  width: 100%;
+  background-color: orange;
+}
+.favorite_movies {
+  min-height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .input {
+    background-color: aqua;
+  }
+}

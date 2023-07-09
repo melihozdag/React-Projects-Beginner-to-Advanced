@@ -1,0 +1,101 @@
+.nav_bar {
+  background-color: black;
+  width: 100%;
+}
+
+.title {
+  color: orange;
+}
+
+input {
+  width: 20rem;
+}
+input:focus {
+  border-color: orange;
+  border: 8px solid orange;
+}
+.nav_links li {
+  margin-right: 10px;
+}
+.nav_links li .active {
+  color: orange;
+  font-size: larger;
+  transform: scale(1.1);
+}
+.nav_links li > a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.small_menu_container {
+  background-color: rgb(255, 166, 0);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.small_menu_container.animation {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.small_menu li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.small_menu li {
+  margin-bottom: 10px;
+}
+.container-fluid,
+.small_menu_container {
+  --bs-gutter-x: 0rem !important;
+}
+.menu_icon {
+  display: none;
+  color: white;
+  font-size: larger;
+}
+.deneme input {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .small_menu > li > a {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(95, 95, 99);
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: orange;
+  }
+  .nav_links li {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+  .deneme {
+    display: none;
+  }
+  .deneme input {
+    display: none;
+  }
+  .search_icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 770px) {
+  .small_menu_container {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 930px) {
+  input {
+    width: 100%;
+  }
+}
