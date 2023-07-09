@@ -33,7 +33,7 @@ export const ResultMovies = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/search/movie?query=${search_movie}&include_adult=false&api_key=4c64ec381362a3bca6f38fcde13cb74f`
+          `https://api.themoviedb.org/3/search/movie?query=${search_movie}&include_adult=false&api_key={YOUR API}`
         );
         setMovies(response.data.results);
       } catch (error) {
